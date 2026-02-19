@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background: url(../img/Backgrounds/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.container1{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/*ENCABEZADO*/
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: aliceblue;
+    max-width: 65%;
+    height: 120px;
+    margin: 20px auto;
+    border: solid 4px black;
+    border-radius: 10px;
+    position: relative;;
+}
+
+.encabezado>.logo{
+    width: 200px;
+    height: 110px;
+    background: url(../img/Logo/logo.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*PROMO*/
+.promo{
+    display: flex;
+    background: url(/img/Promos/promo.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aliceblue;
+    max-width: 65%;
+    height: 300px;
+    border: solid 4px black;
+    margin: 20px auto;
+    
+}
+
+.container2{
+    display: flex;
+    width: 90%;
+    max-width: 820px;
+    margin: auto;
+}
+
+nav{
+    background: #ffde59;
+    width: 20%;
+    height: 350px;
+    margin: 20px ;
+    border: solid 4px black;
+    border-radius: 10px;
+}
+
+.carta{
+    background: #5170ff;
+    width: 80%;
+    height: 650px;
+    margin: 20px ;
+    border: solid 4px black;
+    border-radius: 10px;
+}
