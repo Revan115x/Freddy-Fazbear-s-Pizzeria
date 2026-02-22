@@ -1,4 +1,10 @@
 #!/bin/bash
+
+# Script: Menu GitHub 1.0v
+# Autor: Revan115x
+# Fecha: 22/02/2026
+# Descripción: Script para facilitar el uso de GitHub
+
 while true; do
 
 echo "*****************"
