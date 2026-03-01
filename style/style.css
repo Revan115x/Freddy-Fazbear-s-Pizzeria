@@ -25,8 +25,7 @@ body{
     
 }
 
-/********************gif***********************/
-
+/*********************************GIF***********************************/
 
 .toy{
     position: fixed;
@@ -35,7 +34,6 @@ body{
     z-index: 9999;
 }
 
-
 .toy .bocadillo{
     position: fixed;
     right: 160px;
@@ -43,32 +41,21 @@ body{
     z-index: 9999;
 }
 
-.bocadillo{
+.bocadillo .texto{
     position: fixed;
+    right: 160px;
+    top: 250px;
+    z-index: 9999;
 }
 
-.bocadillo img{
-    width: 250px; /* ajusta al tamaño real */
-    display: block;
-}
+/********************CONTENEDOR LOGO Y EMOTICONOS***********************/
 
-.bocadillo img{
-    position: relative;
-    z-index: 1;
-}
-
-.bocadillo .text{
-    z-index: 2;
-}
 
 .container1{
     width: 100%;
     max-width: 1200px;
     margin: auto;
 }
-
-/********************CONTENEDOR LOGO Y EMOTICONOS***********************/
-
 
 /*CAJA LOGOS*/
 
