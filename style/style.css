@@ -19,33 +19,75 @@
 }
 
 body{
-    background: url(../img/Backgrounds/background.png);
-    background-size: cover;
-    background-attachment: fixed;
-    
+    background: url(../img/Backgrounds/background2.png);
+    background-size: cover;    
 }
 
-/*********************************GIF***********************************/
+/*********************************TOY***********************************/
 
+/*CAJA TOY*/
 .toy{
     position: fixed;
     right: 10px;
-    top:300px;
+    top:450px;
     z-index: 9999;
 }
 
+/*BOCADILLO*/
 .toy .bocadillo{
     position: fixed;
-    right: 160px;
-    top: 250px;
+    right: 145px;
+    top: 355px;
     z-index: 9999;
+     animation: comic 15s linear infinite;
+}
+/*TEXTO DEL BOCADILLO*/
+.bocadillo .text{
+    width: 160px;
+    padding: 12px;
+    border-radius: 15px;
+    position: absolute;
+    top: 30px;
+    right: 24px;
+    transition: transform 0.3s ease;
 }
 
-.bocadillo .texto{
-    position: fixed;
-    right: 160px;
-    top: 250px;
-    z-index: 9999;
+.text p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.text a{
+    color: red;
+    font-weight: bolder;
+}
+
+/*IMG BOCADILLO*/
+.bocadillo img{
+    height: 200px;
+    width: 210px;
+}
+
+@keyframes comic {
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    66%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    67%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /********************CONTENEDOR LOGO Y EMOTICONOS***********************/
@@ -122,14 +164,14 @@ body{
 
 @keyframes zoom {
     0% {
-        transform: scale(0.5);
+        transform: scale(0.9);
     }
     50% {
         transform: scale(1.2);
     }
 
     100% {
-        transform: scale(0.5);
+        transform: scale(0.9);
     }
 }
 
@@ -285,7 +327,7 @@ body{
 
 .new{
     position: absolute;
-    top: -30px;
+    top: 20px;
     left: 80%;
     transform: translateY(-50%);
 }
@@ -333,6 +375,7 @@ body{
     background-repeat: repeat;
     background-size: cover;
     position: relative;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
 }
 
 .xpPlayer .video{
@@ -349,10 +392,28 @@ body{
     width: 100%;
 }
 
+
+.container3{
+    display: flex;
+    width: 100%;
+    max-width: 1070px;
+    margin: auto;
+}
+
+.container3 .banners2{
+    width: 50%;
+}
+
+.banners2 img {
+    padding: 40px 10px 10px 10px; 
+    width: 100%;
+}
+
 /******************** FOOTER ******************/
 footer{
+    margin-top: 50px;
     background-color: black;
-    height: 50px;
+    height: 70px;
     width: 100%;
     align-items: center;
     justify-content: center;
