@@ -9,17 +9,17 @@
     src: url('../fonts/HitandRun-Regular.eot');
     src: local('Hit and Run! Regular'),
          local('HitandRun!-Regular'),
-         url('../fonts/HitandRun-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/HitandRun-Regular.woff2') format('woff2'),
-         url('../fonts/HitandRun-Regular.woff') format('woff'),
-         url('../fonts/HitandRun-Regular.ttf') format('truetype');
+         url('../../fonts/HitandRun-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/HitandRun-Regular.woff2') format('woff2'),
+         url('../../fonts/HitandRun-Regular.woff') format('woff'),
+         url('../../fonts/HitandRun-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 
 body{
-    background: url(../img/Backgrounds/background2.png);
+    background: url(../../img/Backgrounds/background2.png);
     background-size: cover;    
 }
 
@@ -203,7 +203,7 @@ body{
 }
 
 
-/*********************** BARRA LATERAL **********************/
+/*********************** BARRA LATERAL izquierda**********************/
 
 .lateral{
     width: 30%;
@@ -258,17 +258,16 @@ body{
     transition: 0.15s;
 }
 
-/*POST*/
 
-.post_it{
-    /* background: #ffde59; */
+.poster{
+    background: #ffde59;
     max-width: 90%;
     height: 280px;
     margin: 20px ;
-    /* border: solid 4px black; */
+    border: solid 4px black; 
 }
 
-.post_it img{
+.poster img{
     width: 100%;
     height: 100%;
 }
