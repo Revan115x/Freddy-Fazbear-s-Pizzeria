@@ -391,11 +391,11 @@ footer .fnaf{
             background-color: #fff;
             border: 8px solid #e74c3c; /* Rojo vibrante 80s */
             padding: 40px 10px 10px;
-            box-shadow: 10px 10px 0px #000;
             color: #333;
             background-image: radial-gradient(#f7f7f7 20%, transparent 20%), radial-gradient(#f7f7f7 20%, transparent 20%);
             background-position: 0 0, 10px 10px;
             background-size: 20px 20px;
+            margin: 20px;
         }
 
         h2 {
