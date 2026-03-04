@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Hit and Run!';
+    src: url('HitandRun-Regular.eot');
+    src: local('Hit and Run! Regular'), local('HitandRun!-Regular'),
+        url('HitandRun-Regular.eot?#iefix') format('embedded-opentype'),
+        url('HitandRun-Regular.woff2') format('woff2'),
+        url('HitandRun-Regular.woff') format('woff'),
+        url('HitandRun-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
