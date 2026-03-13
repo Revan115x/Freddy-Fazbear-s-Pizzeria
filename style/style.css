@@ -298,6 +298,10 @@ body{
     position: relative;
 }
 
+.card{
+    cursor: pointer;
+}
+
 /*LEGEND ESPECIAL PROMOS */
 
 .legend{
