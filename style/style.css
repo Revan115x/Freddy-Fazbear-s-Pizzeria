@@ -298,11 +298,6 @@ body{
     position: relative;
 }
 
-
-.card{
-    cursor: pointer;
-}
-
 /*LEGEND ESPECIAL PROMOS */
 
 .legend{
@@ -374,7 +369,7 @@ body{
 
 .xpPlayer{
     width: 95%;
-    height: 95%;
+    height: 93%;
     margin: 10px auto;
     border: solid 4px black;
     background: url(/img/Decoration/xpvideo.png);
