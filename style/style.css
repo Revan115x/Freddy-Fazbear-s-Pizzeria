@@ -313,6 +313,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    letter-spacing: 1px;
 }
 
 /*TEXTO LEGEND*/
@@ -439,4 +440,133 @@ footer span {
 
 footer .fnaf{
     color: red;
+}
+
+
+/* ================== TABLET ================== */
+@media (max-width:1024px){
+
+.container1,
+.container2,
+.container3{
+    max-width: 95%;
+}
+
+/* iconos del header un poco más pequeños */
+.iconos img{
+    width:110px;
+}
+
+/* promo más baja */
+.promo{
+    height:320px;
+}
+
+/* pizzas un poco más compactas */
+.carta{
+    height:auto;
+}
+
+.theme{
+    height:auto;
+}
+
+.xpPlayer{
+    height:420px;
+}
+
+/* banners laterales más fluidos */
+.banners{
+    height:auto;
+}
+
+}
+
+
+/* ================== MOVIL ================== */
+@media (max-width:700px){
+
+/* header más compacto */
+.encabezado{
+    height:auto;
+    padding:15px;
+}
+
+.encabezado>.logo{
+    width:180px;
+}
+
+/* ocultamos solo algunos iconos para que no se monten */
+.cake,
+.foxy{
+    display:none;
+}
+
+.iconos img{
+    width:80px;
+}
+
+/* promo más pequeña */
+.promo{
+    height:220px;
+}
+
+/* sidebar un poco más estrecha */
+.lateral{
+    width:35%;
+}
+
+.lateral2{
+    width:65%;
+}
+
+/* grid pizzas pasa a 1 columna */
+.especial{
+    grid-template-columns:1fr;
+}
+
+/* video más adaptable */
+.xpPlayer{
+    height:300px;
+}
+
+.xpPlayer .video{
+    top:80px;
+}
+
+/* toy un poco más abajo */
+.toy{
+    top:auto;
+    bottom:20px;
+}
+
+footer p{
+    font-size:11px;
+}
+
+}
+
+/* ===== BANNERS RESPONSIVE ===== */
+
+@media (max-width:1024px){
+    .banners{
+        height:500px;
+    }
+}
+
+@media (max-width:768px){
+    .banners{
+        height:650px;
+    }
+}
+
+@media (max-width:600px){
+    .banners{
+        height:auto;
+    }
+
+    .banners img{
+        width:100%;
+        height:auto;
+    }
 }
