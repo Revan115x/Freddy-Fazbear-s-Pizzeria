@@ -299,16 +299,16 @@ body{
 
 /*LEGEND ESPECIAL PROMOS */
 
-.legend{
+.CajaPizza {
     position: absolute;
-    top: -30px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
-    width: 300px;
-    background-color: white;
-    border: 4px solid black;
-    border-radius: 10px;
+    width: 650px;
+    background-color: #e0e0e0;
+    border: 6px solid #ffffff;
+    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -316,12 +316,12 @@ body{
 
 /*TEXTO LEGEND*/
 
-.legend h1{
+.CajaPizza h1{
     text-align: center;
     font-size: 29px;
     color: rgb(247, 0, 0);
     font-family: 'Hit and Run!', cursive;
-    padding-top: 5px;
+    padding-top: 1px;
 }
 
 .new{
