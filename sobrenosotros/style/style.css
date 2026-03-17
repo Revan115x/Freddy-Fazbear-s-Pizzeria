@@ -17,6 +17,17 @@
     font-style: normal;
     font-display: swap;
 }
+/****************************FUENTE PARA EL MENÚ***********************************/
+@font-face {
+    font-family: 'Blue';
+    src: url(../font/Blue\ Winter.ttf);
+}
+/******************************FUENTE PARA EL TEXTO DE SOBRENOSOTROS******************/
+
+@font-face {
+    font-family: 'Maquina';
+    src: url(../font/jmh_typewriter/JMH\ Typewriter-Bold.ttf);
+}
 
 body{
     background: url(../../img/Backgrounds/background2.png);
@@ -101,19 +112,33 @@ body{
 
 /*CAJA LOGOS*/
 
-.encabezado{
+.encabezado {
     display: flex;
     position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: aliceblue;
+    background-image: url('../img/estrellasfondo.png');
+    background-repeat: repeat-x; /* importante para que fluya */
+    background-position: 0 0;
     max-width: 85%;
     height: 190px;
     margin: 20px auto;
     border: solid 4px black;
     margin-top: 50px;
+    background-color: aliceblue;
+    animation: cielo 20s linear infinite;
 }
+
+@keyframes cielo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000px 0;
+    }
+}
+
 
 /*GIF LOGO*/
 
@@ -214,10 +239,12 @@ body{
 .nav{
     background: #ffde59;
     max-width: 100%;
-    height: 550px;
+    height: 700px;
     margin: 20px;
     border: 4px solid black;
     text-align: center;
+    font-family: 'Blue';
+    font-size: 20px;
 }
 
 /*LOGO*/
@@ -225,7 +252,7 @@ body{
 .nav .logo{
     margin: 20px auto;
     width: 80%;
-    height: 200px;
+    height: 250px;
 }
 
 .logo img{
@@ -247,7 +274,7 @@ body{
 .nav .links a{
     display: block;
     width: 80%;
-    margin: 25px auto;
+    margin: 35px auto;
     padding: 15px 0;
     background-color: white;
     border: 3px solid black;
@@ -293,16 +320,59 @@ body{
 }
 
 .carta{
-    background: #5170ff;
-    height: 550px;
+    background: #946efc;
+    height: 700px;
     margin: 20px;
     border: solid 4px black;
     padding: 60px 20px 10px 10px; 
     position: relative;
-    font-family: 'Hit and Run!';
+    font-family: 'Maquina';
     letter-spacing: 1px;
+    text-align: justify;
+    font-size: 19px;
+}
+#parrafo2{
     text-align: center;
 }
+.carta ul{
+    list-style: none;
+}
+
+.carta li{
+    max-width: 75%;
+    margin: 5px auto;
+    padding-left: 45px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.7;
+    color: black;
+    background-position: left center;
+}
+
+.viñeta1{
+    background-image: url("../img/pizza.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.viñeta2{
+    background-image: url("../img/familia5.png");
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+
+.viñeta3{
+    background-image: url("../img/nota2.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.viñeta4{
+    background-image: url("../img/tarta2.png");
+    background-size: 22px;
+    background-repeat: no-repeat;
+}
+
 
 /*LEGEND ESPECIAL PROMOS */
 
@@ -365,7 +435,7 @@ body{
 /*********************VIDEO************************/
 
 .theme{
-    background: #db0b61;
+    background: #7df1fe;
     height: 923px;
     margin: 40px 20px 20px 20px;
     border: solid 4px black;
@@ -384,7 +454,7 @@ body{
 }
 
 .theme .first-img {
-    width: 60%;
+    width: 80%;
     height: auto;
     display: block;
     margin: 10px auto;
