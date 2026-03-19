@@ -118,9 +118,8 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-image: url('../img/estrellasfondo.png');
-    background-repeat: repeat-x; /* importante para que fluya */
-    background-position: 0 0;
+    background-image: url('../img/estrellascielo.jpg');
+    background-size: cover;
     max-width: 85%;
     height: 190px;
     margin: 20px auto;
@@ -129,6 +128,22 @@ body{
     background-color: aliceblue;
     animation: cielo 20s linear infinite;
 }
+
+/*.encabezado{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-image: url(img/estrellascielo.jpg);
+    background-size: cover;
+    max-width: 85%;
+    height: 190px;
+    margin: 20px auto;
+    border: solid 4px black;
+    margin-top: 50px;
+     animation: cielo 20s linear infinite;
+}*/
 
 @keyframes cielo {
     from {
