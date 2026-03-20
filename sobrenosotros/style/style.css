@@ -254,12 +254,12 @@ body{
 .nav{
     background: #ffde59;
     max-width: 100%;
-    height: 700px;
+    height: 550px;
     margin: 20px;
     border: 4px solid black;
     text-align: center;
     font-family: 'Blue';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /*LOGO*/
@@ -267,7 +267,7 @@ body{
 .nav .logo{
     margin: 20px auto;
     width: 80%;
-    height: 250px;
+    height: 200px;
 }
 
 .logo img{
@@ -304,7 +304,7 @@ body{
 .poster{
     background: #ffde59;
     max-width: 90%;
-    height: 288px;
+    height: 338px;
     margin: 20px ;
     border: solid 4px black;
     margin-top: 41px;
