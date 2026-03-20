@@ -30,7 +30,7 @@
 }
 
 body{
-    background: url(../../img/Backgrounds/background2.png);
+    background: url(../../img/Backgrounds/background5.gif);
     background-size: cover;    
 }
 
@@ -233,7 +233,7 @@ body{
     
 }
 
-/*****************CONTENDERO MENU Y PIZZAS*******************/
+/*****************CONTENDOR MENU Y PIZZAS*******************/
 
 .container2{
     display: flex;
