@@ -18,8 +18,13 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Blue';
+    src: url(../fonts/Blue\ Winter.ttf);
+}
+
 body{
-    background: url(../../img/Backgrounds/background2.png);
+    background: url(../../img/Backgrounds/background5.gif);
     background-size: cover;    
 }
 
@@ -107,14 +112,14 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-     background-image: url(img/estrellascielo.jpg);
+    background-image: url(img/estrellascielo.jpg);
     background-size: cover;
     max-width: 85%;
     height: 190px;
     margin: 20px auto;
     border: solid 4px black;
     margin-top: 50px;
-     animation: cielo 20s linear infinite;
+    animation: cielo 20s linear infinite;
 }
 
 /*GIF LOGO*/
@@ -224,6 +229,8 @@ body{
     margin: 20px;
     border: 4px solid black;
     text-align: center;
+    font-family: 'Blue';
+    font-size: 13px;
 }
 
 /*LOGO*/
@@ -246,7 +253,6 @@ body{
     margin: 20px auto;
     width: 90%;
     padding: 10px 0;
-    font-family: 'Blue';
 }
 
 /* BOTONES */
@@ -263,11 +269,7 @@ body{
     letter-spacing: 2px;
     box-shadow: 4px 4px 0px black;
     transition: 0.15s;
-    text-decoration: none;
 }
-
-
-
 
 .poster img{
     width: 100%;
