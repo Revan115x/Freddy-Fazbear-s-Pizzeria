@@ -839,3 +839,95 @@ footer span {
 footer .fnaf{
     color: red;
 }
+/**************************************************************
+ * SECCIÓN RESPONSIVE - AÑADIR AL FINAL DEL ARCHIVO
+ **************************************************************/
+
+@media (max-width: 1150px) {
+    /* Ajuste del Header y personajes */
+    .encabezado {
+        max-width: 95%;
+        overflow: hidden;
+    }
+    .iconos img {
+        width: 100px; /* Reducimos tamaño para que no choquen */
+    }
+    .cake { display: none; } /* Quitamos el pastel en pantallas medianas */
+    
+    /* El contenedor lateral y el de las pizzas se ajustan */
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lateral, .lateral2 {
+        width: 100%;
+    }
+    .nav {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* QUITAMOS EL TOY FLOTANTE (Ocupa media pantalla en móvil) */
+    .toy {
+        display: none;
+    }
+
+    /* RESET DE CONTENEDORES DE COMIDA */
+    /* Forzamos que dejen de ser cajas rígidas y se adapten al contenido */
+    .carta, .drink, .snacks {
+        width: 95% !important;
+        height: auto !important;
+        margin: 40px auto !important;
+        right: 0 !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+        gap: 20px;
+    }
+
+    /* RESET DE CADA ITEM (Pizza, Bebida, Snack) */
+    /* Eliminamos los 'left', 'bottom' y 'position absolute' manuales */
+    .pizzas_fila1_1, .pizzas_fila1_2, .pizzas_fila2_1, .pizzas_fila2_2,
+    .bebidas1, .bebidas2, .bebidas3,
+    .snacks1, .snacks2, .snacks3 {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin: 0 !important;
+        width: 280px !important; /* Mantenemos tu tamaño de tarjeta pero fluido */
+        height: 300px !important;
+    }
+
+    /* Ajuste de títulos internos para que no se corten */
+    .lateral2 h1 {
+        font-size: 22px !important;
+    }
+    
+    /* El encabezado flotante (PIZZAS, BEBIDAS) se queda centrado */
+    .encabezado_carta, .encabezado_carta2, .encabezado_carta3 {
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Móviles muy pequeños */
+    .encabezado {
+        height: 120px;
+    }
+    .encabezado > .logo {
+        width: 180px;
+        height: auto;
+    }
+    .iconos {
+        display: none; /* Limpiamos el header para que se vea el logo */
+    }
+    footer p {
+        font-size: 11px;
+        padding: 10px;
+    }
+}
