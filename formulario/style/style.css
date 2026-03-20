@@ -545,3 +545,95 @@ footer span {
 footer .fnaf{
     color: red;
 }
+
+/* --- RESPONSIVE DESIGN --- */
+
+@media (max-width: 700px) {
+  
+    .container2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .lateral, .lateral2 {
+        width: 100%; 
+        max-width: 100%;
+    }
+
+    .encabezado {
+        max-width: 95%;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 10px;
+    }
+
+    .encabezado > .logo {
+        width: 180px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .iconos {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .iconos img {
+        position: static; 
+        width: 60px; 
+    }
+
+
+    .nav {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
+    .nav .links a {
+        width: 90%;
+    }
+
+    .poster {
+        display: none;
+    }
+
+    .legend {
+        width: 90%; 
+        height: auto;
+        padding: 10px;
+    }
+
+    .legend h1 {
+        font-size: 18px;
+    }
+
+    .carta1, .carta2 {
+        height: auto; 
+        padding-bottom: 30px;
+    }
+
+    .toy {
+        display: none;
+    }
+
+   
+    .form-container {
+        margin: 10px;
+        padding: 20px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome, .member li {
+        font-size: 15px;
+        padding-left: 35px;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px 10px;
+    }
+}
