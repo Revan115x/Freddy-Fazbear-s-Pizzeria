@@ -30,7 +30,7 @@
 }
 
 body{
-    background: url(../../img/Backgrounds/background2.png);
+    background: url(../../img/Backgrounds/background5.gif);
     background-size: cover;    
 }
 
@@ -233,7 +233,7 @@ body{
     
 }
 
-/*****************CONTENDERO MENU Y PIZZAS*******************/
+/*****************CONTENDOR MENU Y PIZZAS*******************/
 
 .container2{
     display: flex;
@@ -254,12 +254,12 @@ body{
 .nav{
     background: #ffde59;
     max-width: 100%;
-    height: 700px;
+    height: 550px;
     margin: 20px;
     border: 4px solid black;
     text-align: center;
     font-family: 'Blue';
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /*LOGO*/
@@ -267,7 +267,7 @@ body{
 .nav .logo{
     margin: 20px auto;
     width: 80%;
-    height: 250px;
+    height: 200px;
 }
 
 .logo img{
@@ -304,7 +304,7 @@ body{
 .poster{
     background: #ffde59;
     max-width: 90%;
-    height: 280px;
+    height: 338px;
     margin: 20px ;
     border: solid 4px black;
     margin-top: 41px;
@@ -451,7 +451,7 @@ body{
 
 .theme{
     background: #7df1fe;
-    height: 923px;
+    height: 950px;
     margin: 40px 20px 20px 20px;
     border: solid 4px black;
     padding: 40px 10px 10px 10px; 
@@ -577,4 +577,146 @@ footer span {
 
 footer .fnaf{
     color: red;
+}
+
+/*PARA QUE SE VEA BIEN EN PANTALLAS MÁS PEQUEÑAS*/
+
+@media (max-width: 1400px){
+
+    .cake{
+        display: none;
+    }
+
+    .bonny{ left: 200px; }
+    .freddy{ left: 350px; }
+    .chica{ right: 200px; }
+    .foxy{ right: 80px; }
+
+    .encabezado{
+        max-width: 95%;
+    }
+
+    .container2,
+    .container3{
+        max-width: 95%;
+    }
+}
+
+@media (max-width: 1200px){
+
+    .encabezado{
+        height: 160px;
+    }
+
+    .encabezado > .logo{
+        width: 200px;
+        height: 120px;
+    }
+
+    .iconos img{
+        width: 110px;
+    }
+
+    .bonny{ left: 150px; top: 0; }
+    .freddy{ left: 280px; top: 60px; }
+    .chica{ right: 150px; }
+    .foxy{ right: 50px; }
+
+    .nav{
+        height: auto;
+        font-size: 18px;
+    }
+
+    .poster{
+        height: 220px;
+    }
+
+    .carta{
+        height: auto;
+    }
+
+    .theme{
+        height: auto;
+    }
+}
+
+@media (max-width: 992px){
+
+    .encabezado{
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .iconos{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .iconos img{
+        position: static;
+        width: 90px;
+        margin: 5px;
+    }
+
+    .container2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lateral,
+    .lateral2{
+        width: 90%;
+    }
+
+    .nav{
+        margin: 10px auto;
+    }
+
+    .poster{
+        max-width: 100%;
+        height: 200px;
+    }
+
+    .carta{
+        font-size: 17px;
+    }
+
+    .theme{
+        margin-top: 20px;
+    }
+
+    .video-container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+
+    .iconos img{
+        width: 70px;
+    }
+
+    .nav .links a{
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .carta{
+        font-size: 15px;
+    }
+
+    .poster{
+        height: 180px;
+    }
+
+    .video-container .welcome-video{
+        top: 50px;
+        height: 65%;
+    }
+
+    .toy{
+        display: none;
+    }
 }
