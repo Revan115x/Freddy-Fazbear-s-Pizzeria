@@ -304,7 +304,7 @@ body{
 .poster{
     background: #ffde59;
     max-width: 90%;
-    height: 280px;
+    height: 288px;
     margin: 20px ;
     border: solid 4px black;
     margin-top: 41px;
@@ -451,7 +451,7 @@ body{
 
 .theme{
     background: #7df1fe;
-    height: 923px;
+    height: 950px;
     margin: 40px 20px 20px 20px;
     border: solid 4px black;
     padding: 40px 10px 10px 10px; 
