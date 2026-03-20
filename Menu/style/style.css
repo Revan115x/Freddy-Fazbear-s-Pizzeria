@@ -107,12 +107,14 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: aliceblue;
+     background-image: url(img/estrellascielo.jpg);
+    background-size: cover;
     max-width: 85%;
     height: 190px;
     margin: 20px auto;
     border: solid 4px black;
     margin-top: 50px;
+     animation: cielo 20s linear infinite;
 }
 
 /*GIF LOGO*/
@@ -173,6 +175,10 @@ body{
     100% {
         transform: scale(0.9);
     }
+}
+@font-face {
+    font-family: "Blue";
+    src: url(../style/Fuentes/Blue\ Winter.ttf);
 }
 
 /***********************PROMO PIZZA*************************/
@@ -240,6 +246,7 @@ body{
     margin: 20px auto;
     width: 90%;
     padding: 10px 0;
+    font-family: 'Blue';
 }
 
 /* BOTONES */
@@ -256,16 +263,11 @@ body{
     letter-spacing: 2px;
     box-shadow: 4px 4px 0px black;
     transition: 0.15s;
+    text-decoration: none;
 }
 
 
-.poster{
-    background: #ffde59;
-    max-width: 90%;
-    height: 280px;
-    margin: 20px ;
-    border: solid 4px black; 
-}
+
 
 .poster img{
     width: 100%;
@@ -275,139 +277,536 @@ body{
 /*BANNERS*/
 
 .banners{
-    background: #fffffe;
-    max-width: 90%;
+    background: url(img/estrellascielo.jpg);
+    max-width: 100%;
     height: 350px;
     margin: 20px ;
+    border: solid 8px black;
+}
+
+
+
+/*GIF LOGO*/
+
+.encabezado>.logo{
+    width: 250px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*iconos*/
+
+.iconos img{
+    position: absolute;
+    width: 140px;
+    animation: zoom 5s ease-in-out infinite;
+}
+
+/*posicion iconos*/
+
+.bonny{
+    top: -20px;
+    left: 280px;
+}
+
+.freddy{
+    top: 60px;
+    left: 430px;
+}
+
+.chica{
+    top: -40px;
+    right: 270px;
+}
+
+.foxy{
+    top: 60px;
+    right: 130px;
+}
+
+.cake{
+    top: -20px;
+    left: 870px;
+}
+
+/*animacion*/
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(0.9);
+    }
+}
+@keyframes cielo {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -1000px 0;
+    }
+}
+
+/***********************PROMO PIZZA*************************/
+
+.promo{
+    display: flex;
+    background: url(/img/Promos/promo.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: aliceblue;
+    max-width: 85%;
+    height: 400px;
     border: solid 4px black;
+    margin: 20px auto;
+    
 }
 
 /*********************PIZZAS************************/
+@font-face {
+    font-family:'Maquina';
+    src: url('Fuentes/JMH-Typewriter-Bold.ttf');
+}
 .lateral2{
     display:block;
     width: 70%;
 }
 
 .carta{
-    background: #5170ff;
-    height: 550px;
+    background: #f7d515;
+    height: 545px;
     margin: 20px;
     border: solid 4px black;
     padding: 40px 10px 10px 10px; 
     position: relative;
+    gap:5px;
+    font-family:'Maquina';
+    display:flex;
 }
 
-/*LEGEND ESPECIAL PROMOS */
+/*LEGEND ESPECIAL ENCABEZADOS CARTA */
 
-.legend{
+.encabezado_carta{
+    display:flex;
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+}
+/* TITULOS */
+.encabezado_carta h1{
+    text-align: center;
+    font-size: 29px;
+    color: rgb(247, 0, 0);
+    font-family: 'Hit and Run!', cursive;
+    padding-top: 1px;
+    letter-spacing: 1px;
+}
+/* PIZZAS Y ABSOLUTE*/
+.pizzas_fila1_1{
+    left: 20px;
+    height:35%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR PIZZAS*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta la pizza en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/image.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 30px;
+    font-size: 19px;
+}
+.pizzas_fila1_1 img {
+    width:60%;
+    height:75%;
+}
+.pizzas_fila1_1 h1 {
+    position: absolute;
+    top:130px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 25px;
+}
+.pizzas_fila1_2{
+    height:35%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR PIZZAS*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta la pizza en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/image.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 30px;
+    font-size: 19px;
+     /*POSICIONAR PIZZAS*/
+     left: 380px;
+}
+.pizzas_fila1_2 img {
+    width:60%;
+    height:75%;
+}
+.pizzas_fila1_2 h1 {
+    position: absolute;
+    top:130px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 25px;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+}
+
+.pizzas_fila2_1{
+    left: 20px;
+    height:35%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR PIZZAS*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta la pizza en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/PizzasAbajo.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    bottom:50px;
+        /*POSICIONAR PIZZAS*/
+    font-size: 19px;
+}
+.pizzas_fila2_1 img {
+    width:60%;
+    height:75%;
+}
+.pizzas_fila2_1 h1 {
+    position: absolute;
+    top:130px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 25px;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+}
+.pizzas_fila2_2{
+    height:35%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR PIZZAS*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta la pizza en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/PizzasAbajo.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR PIZZAS*/
+     left: 380px;
+     bottom:50px;
+}
+.pizzas_fila2_2 img {
+    width:60%;
+    height:75%;
+}
+.pizzas_fila2_2 h1 {
+    position: absolute;
+    top:130px;
+    font-weight: bold;
+    color: yellow;
+    font-size: 25px;
+    text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.7);
+}
+/*BEBIDAS CAJAS Y ENCABEZADOS*/
+.drink{
+    background: #5170ff;
+    height: 400px;
+    margin: 40px 20px 20px 20px;
+    border: solid 4px black;
+    position: relative;
+    width:137%;
+    right:320px;
+}
+.encabezado_carta2{
+    display:flex;
     position: absolute;
     top: -30px;
     left: 50%;
     transform: translateX(-50%);
     height: 60px;
-    width: 300px;
-    background-color: white;
-    border: 4px solid black;
+    width: 200px;
+     background-color: white;
+    border: 2px solid black;
     border-radius: 10px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
-
-/*TEXTO LEGEND*/
-
-.legend h1{
+.drink h1{
+    font-size: 30px;
+    color: red;
+    letter-spacing: 1px;
+    font-family: 'Hit and Run!';
     text-align: center;
-    font-size: 29px;
-    color: rgb(247, 0, 0);
-    font-family: 'Hit and Run!', cursive;
-    padding-top: 5px;
 }
-
-.new{
-    position: absolute;
-    top: 20px;
-    left: 80%;
-    transform: translateY(-50%);
-}
-
-/* GRID DE LAS FOTOS */
-.especial{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-/* TARJETA DE LAS FOTOS */
-.card{
+/*BEBIDAS*/
+.bebidas1{
+    height:70%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR BEBIDA*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta la bebida en caso de que se pase de la altura*/
     overflow: hidden;
-    border: 4px solid black;
+    background-image:url(img/FondoPis.png);
+    background-size: cover;
+    border: 2px solid black;
     box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
-    background: white;
-    user-select:unset;
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR BEBIDA*/
+     left: 30px;
+     bottom:60px;
 }
-
-/* FOTOS */
-.card img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-} 
-
-/*********************VIDEO************************/
-
-.theme{
+.bebidas1 img {
+    width:80%;
+    height:77%;
+}
+.bebidas1 h1 {
+    position: absolute;
+    font-family:'Maquina';
+    bottom:30px;
+    font-weight: bold;
+    color: #c1ff72;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+.bebidas2{
+    height:70%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR BEBIDA*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    background-color: yellow;
+    /*Recorta la bebida en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/red.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR BEBIDA*/
+     left:370px;
+     bottom:60px;
+}
+.bebidas2 img {
+    width:50%;
+    height:77%;
+}
+.bebidas2 h1 {
+    position: absolute;
+    font-family:'Maquina';
+    bottom:30px;
+    font-weight: bold;
+    color: #a6a6a6;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+.bebidas3{
+    height:70%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR BEBIDA*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    background-color: yellow;
+    /*Recorta la bebida en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/orange.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR BEBIDA*/
+     left:700px;
+     bottom:60px;
+}
+.bebidas3 img {
+    width:50%;
+    height:87%;
+}
+.bebidas3 h1 {
+    position: absolute;
+    bottom:30px;
+    font-family:'Maquina';
+    font-weight: bold;
+    color: orange;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
+/*SNACKS CAJAS Y ENCABEZADOS*/
+.snacks{
     background: #db0b61;
-    height: 630px;
+    height: 450px;
     margin: 40px 20px 20px 20px;
     border: solid 4px black;
-    padding: 40px 10px 10px 10px; 
     position: relative;
+    font-family:'Maquina';
+    width:137%;
+    right:320px;
 }
-
-.xpPlayer{
-    width: 95%;
-    height: 95%;
-    margin: 10px auto;
-    border: solid 4px black;
-    background: url(/img/Decoration/xpvideo.png);
-    background-repeat: repeat;
-    background-size: cover;
-    position: relative;
-    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
-}
-
-.xpPlayer .video{
-    background-color: red;
-    height: 75%;
-    width: 95%;
+.encabezado_carta3{
+    display:flex;
     position: absolute;
-    top: 100px;
-    right: 20px;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
 }
-
-.video iframe{
-    height: 100%;
-    width: 100%;
+.snacks h1{
+    font-size: 30px;
+    color: red;
+    letter-spacing: 1px;
+    font-family: 'Hit and Run!', cursive;
+    text-align: center;
 }
-
-
-.container3{
-    display: flex;
-    width: 100%;
-    max-width: 1070px;
-    margin: auto;
+.snacks1{
+    height:70%;
+    width:300px;
+    border-radius: 40px;
+    /*POSICIONAR SNACK*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta el snack en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/yellow.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR SNACK*/
+     left: 30px;
+     bottom:60px;
 }
-
-.container3 .banners2{
-    width: 50%;
+.snacks1 img {
+    width:80%;
+    height:77%;
 }
-
-.banners2 img {
-    padding: 40px 10px 10px 10px; 
-    width: 100%;
+.snacks1 h1 {
+    position: absolute;
+    font-family:'Maquina';
+    bottom:80px;
+    font-weight: bold;
+    color: #7e4823;
+    font-size: 27px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
-
+.snacks2{
+    height:70%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR SNACK*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta el snack en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/BrownP.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR SNACK*/
+     left:370px;
+     bottom:60px;
+}
+.snacks2 img {
+    width:80%;
+    height:77%;
+}
+.snacks2 h1 {
+    position: absolute;
+    bottom:80px;
+    font-weight: bold;
+    color: red;
+    font-family:'Maquina';
+    font-size: 27px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+}
+.snacks3{
+    height:70%;
+    width:300px;
+    border-radius: 50px;
+    /*POSICIONAR SNACK*/
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    /*Recorta el snack en caso de que se pase de la altura*/
+    overflow: hidden;
+    background-image:url(img/FondoChoco.png);
+    background-size: cover;
+    border: 2px solid black;
+    box-shadow: 4px 6px rgba(0, 0, 0, 0.45);
+    margin-top: 60px;
+    font-size: 19px;
+     /*POSICIONAR SNACK*/
+     left:700px;
+     bottom:60px;
+}
+.snacks3 img {
+    width:80%;
+    height:77%;
+}
+.snacks3 h1 {
+    position: absolute;
+    font-family:'Maquina';
+    bottom:80px;
+    color: #5170ff;
+    font-size: 25px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.7);
+}
 /******************** FOOTER ******************/
 footer{
     margin-top: 50px;
@@ -423,6 +822,7 @@ footer{
 footer p{
     font-size: 13px;
     color: white;
+    height: 50px;
     text-align: center;
     padding-top: 15px;
     text-decoration:underline;
@@ -438,4 +838,96 @@ footer span {
 
 footer .fnaf{
     color: red;
+}
+/**************************************************************
+ * SECCIÓN RESPONSIVE - AÑADIR AL FINAL DEL ARCHIVO
+ **************************************************************/
+
+@media (max-width: 1150px) {
+    /* Ajuste del Header y personajes */
+    .encabezado {
+        max-width: 95%;
+        overflow: hidden;
+    }
+    .iconos img {
+        width: 100px; /* Reducimos tamaño para que no choquen */
+    }
+    .cake { display: none; } /* Quitamos el pastel en pantallas medianas */
+    
+    /* El contenedor lateral y el de las pizzas se ajustan */
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lateral, .lateral2 {
+        width: 100%;
+    }
+    .nav {
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 850px) {
+    /* QUITAMOS EL TOY FLOTANTE (Ocupa media pantalla en móvil) */
+    .toy {
+        display: none;
+    }
+
+    /* RESET DE CONTENEDORES DE COMIDA */
+    /* Forzamos que dejen de ser cajas rígidas y se adapten al contenido */
+    .carta, .drink, .snacks {
+        width: 95% !important;
+        height: auto !important;
+        margin: 40px auto !important;
+        right: 0 !important;
+        display: flex !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        padding-top: 80px !important;
+        padding-bottom: 40px !important;
+        gap: 20px;
+    }
+
+    /* RESET DE CADA ITEM (Pizza, Bebida, Snack) */
+    /* Eliminamos los 'left', 'bottom' y 'position absolute' manuales */
+    .pizzas_fila1_1, .pizzas_fila1_2, .pizzas_fila2_1, .pizzas_fila2_2,
+    .bebidas1, .bebidas2, .bebidas3,
+    .snacks1, .snacks2, .snacks3 {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        bottom: auto !important;
+        margin: 0 !important;
+        width: 280px !important; /* Mantenemos tu tamaño de tarjeta pero fluido */
+        height: 300px !important;
+    }
+
+    /* Ajuste de títulos internos para que no se corten */
+    .lateral2 h1 {
+        font-size: 22px !important;
+    }
+    
+    /* El encabezado flotante (PIZZAS, BEBIDAS) se queda centrado */
+    .encabezado_carta, .encabezado_carta2, .encabezado_carta3 {
+        width: 180px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Móviles muy pequeños */
+    .encabezado {
+        height: 120px;
+    }
+    .encabezado > .logo {
+        width: 180px;
+        height: auto;
+    }
+    .iconos {
+        display: none; /* Limpiamos el header para que se vea el logo */
+    }
+    footer p {
+        font-size: 11px;
+        padding: 10px;
+    }
 }
