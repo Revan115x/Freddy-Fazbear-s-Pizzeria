@@ -219,7 +219,7 @@ body{
 
 .promo{
     display: flex;
-    background: url(/img/Promos/promo.png);
+    background: url('/img/Promos/promo.png');
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
