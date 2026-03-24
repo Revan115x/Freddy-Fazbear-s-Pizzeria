@@ -197,7 +197,7 @@ body{
 
 .promo{
     display: flex;
-    background-image: url(../img/Promos/promo.jpg);;
+    background:url(../img/Promos/promo.jpg);
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
