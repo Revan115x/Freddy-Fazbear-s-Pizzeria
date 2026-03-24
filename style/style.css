@@ -197,7 +197,7 @@ body{
 
 .promo{
     display: flex;
-    background: url(/img/Promos/promo.png);
+    background-image: url(../img/Promos/promo.jpg);;
     background-size: cover;
     background-repeat:no-repeat;
     background-position: center;
@@ -396,7 +396,7 @@ body{
     height: 93%;
     margin: 10px auto;
     border: solid 4px black;
-    background: url(/img/Decoration/xpvideo.png);
+    background: url(../img/Decoration/xpvideo.png);
     background-repeat: repeat;
     background-size: cover;
     position: relative;
